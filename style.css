@@ -83,7 +83,7 @@ form .page .field input {
     height: 65px;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
@@ -102,9 +102,9 @@ form .page .field input {
     line-height: 26px;
     color: #757575;
 }
-
-.checkbox-item input:checked + label {
-    color: #496AC0;
+.check-container input[type="radio"]:checked + .checkbox-item { 
+    font-weight: bold; 
+    border: 1px solid red;
 }
 
 form .page .field button {
