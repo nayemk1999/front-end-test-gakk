@@ -73,61 +73,33 @@ form .page .field input {
     font-size: 18px;
 }
 
-.select {
-    border: 1px solid gray;
+.checkbox-item{
+    margin-bottom: 5px;
     width: 40%;
-    margin: 3px;
-    padding: 7px;
-    border-radius: 5px;
+    height: 65px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    box-shadow: 1px 1px 15px rgba(207, 207, 207, 0.2);
+}
+.checkbox-item input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+.checkbox-item label{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #757575;
 }
 
-.checkbox-container {
+.checkbox-item input:checked + label {
     color: #496AC0;
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-}
-
-.checkbox-container:hover input~.checkmark {
-    background-color: #ccc;
-}
-
-.checkbox-container input:checked~.checkmark {
-    background-color: #2196F3;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.checkbox-container input:checked~.checkmark:after {
-    display: block;
 }
 
 form .page .field button {
@@ -151,7 +123,7 @@ form .page .field button:hover {
 }
 
 form .page .btns button {
-    margin-top: -20px!important;
+    margin-top: -20px !important;
 }
 
 form .page .btns button.prev {

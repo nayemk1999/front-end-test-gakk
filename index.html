@@ -42,32 +42,30 @@
                 <form action="#">
                     <div class="page slide-page">
                         <h4>To get Started , how can we help you ?</h4>
-                        <div style='display:flex; flex-direction:column;' required name="" id="selectBox">
-                            <h4 style="color: red;" id='error'></h4>
-                            <div class="select">
-                                <label class='checkbox-container' for="check1">
-                                  I'm looking to pay off my debts
-                                <input type="radio" id="check1" name="check1" checked>
-                                <!-- <span class="checkmark"></span></label> -->
+                        <div style='display:flex; flex-direction:column; margin-top: 20px;' required name="" id="selectBox">
+                            <h4 style="color: red; margin-bottom: 10px;" id='error'></h4>
+                            <div class="check-container">
+                                <div class="checkbox-item">
+                                    <label for="check1">I'm looking to pay off my debts</label>
+                                    <input type="radio" name="check1" id="check1" value="check1" />
+                                </div>
+                                <div class="checkbox-item">
+                                    <label for="check2">I'm trying to build my credit score</label>
+                                    <input type="radio" name="check2" id="check2" value="check2" />
+                                </div>
+                                <div class="checkbox-item">
+                                    <label for="check3"> want to raise money for my house deposit</label>
+                                    <input type="radio" name="check3" id="check3" value="check3" />
+                                </div>
+                                <div class="checkbox-item">
+                                    <label for="check4">I'm raising money for something else</label>
+                                    <input type="radio" name="check4" id="check4" value="check4" /> 
+                                </div>
+                                <div style='width: 40%; padding: 7px' class="field">
+                                    <button type="submit" class="firstNext next">Next</button>
+                                </div>
                             </div>
-                            <div class="select">
-                                <label class='checkbox-container' for="check2">I'm trying to build my credit score
-                                <input type="radio" id="check2" name="check2">
-                                <span class="checkmark"></span></label>
-                            </div>
-                            <div class="select">
-                                <label class='checkbox-container' for="check3">I want to raise money for my house deposit
-                                <input type="radio" id="check3" name="check3">
-                                <span class="checkmark"></span></label>
-                            </div>
-                            <div class="select">
-                                <label class='checkbox-container' for="check4">I'm raising money for something else
-                                <input type="radio" id="check4" name="check4">
-                                <span class="checkmark"></span></label>
-                            </div>
-                            <div style='width: 40%; padding: 7px' class="field">
-                                <button type="submit" class="firstNext next">Next</button>
-                            </div>
+                            
                         </div>
 
                     </div>
@@ -95,7 +93,8 @@
                     </div>
                     <div class="">
                         <div class="last-step">
-                            <p>By registering , you agree to the Terms and Conditions, and That you have read our Data Use Policy of Our AVAL End User License</p>
+                            <p>By registering , you agree to the Terms and Conditions, and That you have read our Data
+                                Use Policy of Our AVAL End User License</p>
                             <button class="next-2">Next</button>
                         </div>
                     </div>
